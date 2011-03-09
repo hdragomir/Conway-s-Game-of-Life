@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Of Life</title>
+    <style type="text/css">
+
+        body{
+            margin: 0;
+            background: #f3f3f2;
+        }
+
+        #canvas {
+            width: 800px;
+            margin: 50px auto;
+            background: white;
+            overflow: auto;
+
+        }
+            #canvas a{
+                display: block;
+                cursor: pointer;
+                float: left;
+                position: relative;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+            }
+                #canvas a.alive{
+                    background: #FFF500;
+                }
+        #go{
+            width: 400px;
+            height: 40px;
+            font: 14px/40px sans-serif;
+            background: #333;
+            color: #fff;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+
+
+    </style>
+    <script src="js/jquery-1.5.1.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/gof.js"></script>
+</head>
+<body>
+    <div id=canvas>
+    </div>
+    <a href="" id="go">Start</a>
+</body>
+</html>
