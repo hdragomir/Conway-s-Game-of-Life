@@ -13,7 +13,7 @@ $(function(){
     });
 
     gol.init();
-    runtests();
+    //runtests();
 });
 
 
@@ -55,7 +55,7 @@ var gol = {
     tick: function(){
         gol.prepareNextState();
         gol.applyNextState();
-        gol.interval = setTimeout(gol.tick, 200);
+        gol.interval = setTimeout(gol.tick, 500);
     },
 
     isCellAlive : function(cell){
